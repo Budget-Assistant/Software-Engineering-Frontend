@@ -1,0 +1,132 @@
+.signup-page {
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.signup-container {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 3rem;
+    background-color: rgba(68, 68, 68, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+  
+.form-group input {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #555555;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: #cccccc;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #555555;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+  
+form .form-group input.signup-form-input {
+    background-color: #555555 !important;
+    color: #ffffff !important;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+.link span {
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+.link .login-link {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+.signup-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width:600px) {
+    .signup-page {
+        background-image: url('https://t3.ftcdn.net/jpg/07/21/87/44/360_F_721874463_Gx3Y5bshhB23DlVJxR3I5B2sBuZCcAiD.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .signup-image-container {
+        display: none;
+    }
+    .signup-container {
+        height: 80vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+}

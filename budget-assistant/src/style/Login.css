@@ -1,0 +1,202 @@
+.login-page {
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-container {
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(68, 68, 68, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.google-login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login-header {
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social-login p {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.social-button.facebook {
+    background-color: #1877f2;
+    background-image: url('https://i.ibb.co/JQb3D78/facebook-number.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button.twitter {
+    background-color: #1da1f2;
+}
+
+.social-button.linkedin {
+    background-color: #0077b5;
+}
+
+.login-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+    width: 100%;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #555555;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form .form-group input.login-form-input {
+    background-color: #555555 !important;
+    color: #ffffff !important;
+}
+
+.form-input::placeholder {
+    color: #cccccc;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #cccccc;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.remember-me input {
+    width: 20px;
+    height: 20px;
+}
+
+.forgot-password {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+.link span {
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+.link .register-link {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: #0077b5;
+    text-decoration: underline;
+}
+
+
+@media (max-width:600px) {
+    .login-page {
+        background-image: url('https://t3.ftcdn.net/jpg/07/21/87/44/360_F_721874463_Gx3Y5bshhB23DlVJxR3I5B2sBuZCcAiD.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .login-image-container {
+        display: none;
+    }
+    .login-container {
+        height: 80vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+}
