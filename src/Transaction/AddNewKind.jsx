@@ -4,6 +4,7 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
     const [customKinds, setCustomKinds] = useState([]);
     const [newKindName, setNewKindName] = useState('');
     const [newKindType, setNewKindType] = useState('');
+    const [showModal, setShowModal] = useState(false);
     // Fetch custom kinds from the server
     useEffect(() => {
         const fetchCustomKinds = async () => {
@@ -99,16 +100,61 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
                     </select>
                     <button className="btn bg-info w-75" onClick={handleAddCustomKind}>Add Kind</button>
                 </div>
-                <ul>
-                    {customKinds.map(customKind => (
-                        <li key={customKind._id} className="d-flex justify-content-between align-items-center">
-                            {customKind.name}
-                            <button className='btn' onClick={() => handleDeleteCustomKind(customKind._id)}>
-                                <i class="bi bi-trash3-fill"></i>
-                            </button>
-                        </li>
-                    ))}
-                </ul>
+                <div>
+                    {/* 觸發按鈕 */}
+                    <button 
+                        className="btn btn-success"
+                        onClick={() => setShowModal(true)}
+                    >
+                        查看自定義類別(View custom Kinds)
+                    </button>
+
+                    {/* 模態框 */}
+                    {showModal && (
+                        <div className="modal show d-block" tabIndex="-1" role="dialog">
+                            <div className="modal-dialog modal-dialog-centered" role="document">
+                                <div className="modal-content bg-light">
+                                    <div className="modal-header">
+                                        <h5 className="modal-title">自定義類別(Custom Kinds)</h5>
+                                        <button 
+                                            type="button" 
+                                            className="btn-close" 
+                                            onClick={() => setShowModal(false)} 
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div className="modal-body">
+                                        <ul>
+                                            {customKinds.map(customKind => (
+                                                <li 
+                                                    key={customKind._id} 
+                                                    className="d-flex justify-content-between align-items-center"
+                                                >
+                                                    {customKind.name}
+                                                    <button 
+                                                        className='btn btn-danger' 
+                                                        onClick={() => handleDeleteCustomKind(customKind._id)}
+                                                    >
+                                                        <i className="bi bi-trash3-fill"></i>
+                                                    </button>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="modal-footer">
+                                        <button 
+                                            type="button" 
+                                            className="btn btn-secondary" 
+                                            onClick={() => setShowModal(false)}
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
     );
 }
