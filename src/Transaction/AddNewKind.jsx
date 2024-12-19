@@ -8,7 +8,7 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
     useEffect(() => {
         const fetchCustomKinds = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api/customized-kinds', {
+                const response = await fetch('https://budget-assistant-backend.onrender.com/api/customized-kinds', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -32,7 +32,7 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
             return;
         }
         try {
-            const response = await fetch('http://localhost:3001/api/customized-kinds', {
+            const response = await fetch('https://budget-assistant-backend.onrender.com/api/customized-kinds', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
     // Function to delete a custom kind
     const handleDeleteCustomKind = async (kindId) => {
         try {
-            const response = await fetch(`http://localhost:3001/api/customized-kinds/${kindId}`, {
+            const response = await fetch(`https://budget-assistant-backend.onrender.com/api/customized-kinds/${kindId}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,

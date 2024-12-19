@@ -7,7 +7,7 @@ export const handleSubmit = async (e, formData, navigate) => {
   }
 
   try {
-      const response = await fetch('http://localhost:3001/api/users/register', {
+      const response = await fetch('https://budget-assistant-backend.onrender.com/api/users/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

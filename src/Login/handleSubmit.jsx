@@ -1,7 +1,7 @@
 export const handleSubmit = async (e, formData, navigate) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:3001/api/users/login', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/users/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: formData.email, password: formData.password }),

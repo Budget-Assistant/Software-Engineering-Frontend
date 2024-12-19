@@ -24,7 +24,7 @@ export const handleTransactionAdd = async (e, selectedDate, amount, description,
     }
 
     try {
-        const response = await fetch('http://localhost:3001/api/transactions', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/transactions', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`

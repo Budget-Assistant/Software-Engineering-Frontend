@@ -1,7 +1,7 @@
 export const handleEmailUpdate = async (e, newEmail, token, setUserInfo, setIsEditingEmail) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:3001/api/users/email', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/users/email', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

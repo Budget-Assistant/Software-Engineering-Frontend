@@ -4,7 +4,7 @@ export const handleTransactionEdit = async (id, transaction, token) => {
         formData.append(key, transaction[key]);
     }
     try {
-        const response = await fetch(`http://localhost:3001/api/transactions/${id}`, {
+        const response = await fetch(`https://budget-assistant-backend.onrender.com/api/transactions/${id}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${token}`

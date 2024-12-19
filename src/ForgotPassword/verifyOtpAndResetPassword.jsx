@@ -1,6 +1,6 @@
 export const verifyOtpAndResetPassword = async (email, otp, newPassword) => {
     try {
-        const response = await fetch('http://localhost:3001/api/verify-otp', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/verify-otp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

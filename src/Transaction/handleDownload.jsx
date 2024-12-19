@@ -4,7 +4,7 @@ import {jwtDecode} from 'jwt-decode';
 export const handleDownload = async (token) => {
     const userId = jwtDecode(token).userId;
     try {
-        const response = await axios.get(`http://localhost:3001/export-excel/${userId}`, {
+        const response = await axios.get(`https://budget-assistant-backend.onrender.com/export-excel/${userId}`, {
             responseType: 'blob',
         });
 

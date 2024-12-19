@@ -24,7 +24,7 @@ const EditTransactionPage = () => {
     useEffect(() => {
         const fetchTransaction = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/api/transactions/${id}`, {
+                const response = await fetch(`https://budget-assistant-backend.onrender.com/api/transactions/${id}`, {
 
                     headers: {
                         'Authorization': `Bearer ${token}`

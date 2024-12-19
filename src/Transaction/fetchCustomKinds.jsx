@@ -1,6 +1,6 @@
 export const fetchCustomKinds = async (token, setCustomKinds) => {
     try {
-        const response = await fetch('http://localhost:3001/api/customized-kinds', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/customized-kinds', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,

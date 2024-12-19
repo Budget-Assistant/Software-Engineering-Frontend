@@ -1,7 +1,7 @@
 export const handleUsernameUpdate = async (e,newUsername,token,setNewUsername) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:3001/api/users/settings', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/users/settings', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

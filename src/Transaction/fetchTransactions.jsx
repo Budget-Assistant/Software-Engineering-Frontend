@@ -1,6 +1,6 @@
 export const fetchTransactions = async (token, setEditingTransactions) => {
     try {
-        const response = await fetch('http://localhost:3001/api/transactions', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/api/transactions', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,

@@ -1,7 +1,7 @@
 export const handleSetting = async (e,newUsername,token,navigate) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:3001/users/settings', {
+        const response = await fetch('https://budget-assistant-backend.onrender.com/users/settings', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
