@@ -106,7 +106,7 @@ function AddNewKind({ token, onKindAdded, onKindDeleted }) {
                         className="btn btn-success"
                         onClick={() => setShowModal(true)}
                     >
-                        查看自定義類別(View custom Kinds)
+                        查看自定義類別(View Custom Kinds)
                     </button>
 
                     {/* 模態框 */}
