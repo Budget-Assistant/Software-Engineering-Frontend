@@ -37,7 +37,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/settings" element={<Setting />} />
+          {/* <Route path="/settings" element={<Setting />} /> */}
         </Routes>
       </Router>
     </div>

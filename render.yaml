@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: budget-assistant
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    routes:
+      - src: /*
+        dest: /index.html
