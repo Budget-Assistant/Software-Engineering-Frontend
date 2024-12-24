@@ -1,3 +1,31 @@
+# 記帳助手 (Budget Assistant)
+
+記帳助手是一個用於管理個人財務的單頁應用程序（SPA），使用 React 和 Node.js 構建。用戶可以記錄收入和支出，查看財務報表，並設置重複性交易。
+
+## 功能
+
+- 用戶註冊和登錄
+- 記錄收入和支出
+- 查看財務報表（長條圖、圓餅圖、折線圖）
+- 設置重複性交易
+- 編輯和刪除交易
+- 更新用戶個資（用戶名、電子郵件、密碼）
+
+## 技術棧
+
+- 前端：React, React Router, Bootstrap, Recharts
+- 後端：Node.js, Express
+- 數據庫：MongoDB
+- 認證：JWT（JSON Web Token）
+
+## 環境設置
+
+### 前置條件
+
+- Node.js (版本 14 或更高)
+- npm (Node Package Manager)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
