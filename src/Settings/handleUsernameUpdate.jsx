@@ -13,6 +13,7 @@ export const handleUsernameUpdate = async (e,newUsername,token,setNewUsername) =
         if (response.ok) {
             alert('用戶名稱更新成功！');
             setNewUsername('');  // 清空用戶名稱輸入
+            window.location.reload(); // 更新為新的用戶名稱
         } else {
             const data = await response.json();
             alert(data.message || '更新失敗，請稍後再試');
