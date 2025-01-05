@@ -438,6 +438,8 @@ const TransactionPage = () => {
                                 和查詢範圍同步
                             </label>
                         </div>
+                    {!quickTimeSelectFlagForLine && (
+                        <>
                         <select value={selectedChartForLine} onChange={(e) => setSelectedChartForLine(e.target.value)} className="form-select" disabled={quickTimeSelectFlagForLine}>
                             <option value="currentDay">當日</option>
                             <option value="currentWeek">當周</option>
@@ -450,6 +452,8 @@ const TransactionPage = () => {
                             dateFormat="yyyy/MM/dd"
                             className="form-control ms-3"
                         />
+                        </>
+                    )}
                     </div>
                 )}
             </div>
