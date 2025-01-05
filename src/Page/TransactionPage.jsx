@@ -72,8 +72,7 @@ const TransactionPage = () => {
     }, [token]);
 
     useEffect(() => {
-        fetchTransactions(token, setTransactions, navigate);
-        
+        fetchTransactions(token, setTransactions);
     }, [token]);
     useEffect(() => {
        setSelectedChartForLine(selectedChartForLine)
@@ -114,6 +113,7 @@ const TransactionPage = () => {
                     else if(selectedDateForQuickSearch === "currentYear"){
                         return transactionDate >= resetTime(getFirstDayOfYear(quickSearchCurrentDay)) && transactionDate <= resetTime(getLastDayOfYear(quickSearchCurrentDay));
                     }
+                    return false;
                 })
                 setFilteredTransactions(filtered);
             }
