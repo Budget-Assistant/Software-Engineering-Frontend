@@ -1,23 +1,9 @@
-   name: Deploy to GitHub Pages
-
-   on:
-     push:
-       branches:
-         - main
-
-   jobs:
-     deploy:
-       runs-on: ubuntu-latest
-
-       steps:
-         - name: Checkout
-           uses: actions/checkout@v2
-
-         - name: Build
-           run: npm run build
-
-         - name: Deploy
-           uses: peaceiris/actions-gh-pages@v3
-           with:
-             personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-             publish_dir: ./build
+services:
+  - type: web
+    name: budget-assistant
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    routes:
+      - src: /*
+        dest: /index.html
