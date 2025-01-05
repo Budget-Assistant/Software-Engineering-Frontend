@@ -146,13 +146,6 @@ const TransactionPage = () => {
         }}, [startDate, endDate, transactions,chartStartDate,selectedChartForLine,quickSearchCurrentDay,selectedDateForQuickSearch,enableQuickSearchFlag]);
 
     
-    const formData = {
-        selectedDate,
-        amount,
-        description,
-        type,
-        kind
-    };
 
     const setFormData = (data) => {
         setSelectedDate(data.selectedDate || new Date());
