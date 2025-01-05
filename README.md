@@ -25,15 +25,6 @@
 - Node.js (版本 14 或更高)
 - npm (Node Package Manager)
 
-### 安裝環境步驟
-`npm install`
-`npm start`
-
-- 須安裝 Budget-Assistant-Backend 以連結後端並輸入以下指令，屆時專案便可正常啟動
-https://github.com/SE-G5-Budget-Assistant/Budget-Assistant-Backend
-
-`npm install`
-`node server.js`
 
 # Getting Started with Create React App
 

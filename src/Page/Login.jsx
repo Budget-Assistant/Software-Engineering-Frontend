@@ -89,10 +89,10 @@ const Login = () => {
                 </div>
 
                 <div className="additional-links">
-                    {/* <div className='remember-me'>
+                    <div className='remember-me'>
                         <input type="checkbox" />
                         <p>Remember me</p>
-                    </div> */}
+                    </div>
                     <Link to="/forgot-password" className="forgot-password">Forgot password ?</Link>
                 </div>
 
