@@ -133,6 +133,7 @@ const TransactionPage = () => {
                 else if(selectedChartForLine === "currentYear"){
                     return transactionDate >= resetTime(getFirstDayOfYear(chartStartDate)) && transactionDate <= resetTime(getLastDayOfYear(chartStartDate));
                 }
+                return false;
             });
 
             setAllTransactions(filteredForChart.sort((a, b) => {
