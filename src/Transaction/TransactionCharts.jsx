@@ -19,9 +19,6 @@ const COLORS = [
 ];
 
 const TransactionCharts = ({ transaction  , selectedChart, quickTimeSelectFlagForLine1,selectedChartForLine1}) => {
-  // Bar chart state
-  const [selectedYearOfBar, setSelectedYearOfBar] = useState(2024);
-  const [selectedMonthOfBar, setSelectedMonthOfBar] = useState(9);
 
   // Line chart state
   const [timeRange, setTimeRange] = useState('week');

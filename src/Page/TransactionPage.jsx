@@ -17,7 +17,6 @@ import 'react-datepicker/dist/react-datepicker.css';
 import '../style/AddTransaction.css';
 import './TransactionPage.css';
 import TransactionCharts from '../Transaction/TransactionCharts';
-import { jwtDecode } from 'jwt-decode';
 import { getFirstDayOfWeek, getLastDayOfWeek, getFirstDayOfMonth, getLastDayOfMonth, getFirstDayOfYear, getLastDayOfYear } from '../Transaction/handleTransactionChart';
 import { fetchUserName } from '../Transaction/fetchUserName';
 const TransactionPage = () => {

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Setting.css';
-import { handleSetting } from '../Transaction/handleSetting';
 import { handleEmailUpdate } from '../Settings/handleEmailUpdate';
 import { handlePasswordUpdate } from '../Settings/handlePasswordUpdate';
 import { fetchUserInfo } from '../Settings/fetchUserInfo';
 import { handleUsernameUpdate } from '../Settings/handleUsernameUpdate';
-import { handleGoogleLogin } from '../Login/handleGoogleLogin';
 
 const Setting = () => {
     const [newUsername, setNewUsername] = useState('');

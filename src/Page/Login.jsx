@@ -22,7 +22,7 @@ const Login = () => {
             localStorage.setItem('token', token);
             navigate('/add-transaction'); // Redirect to the dashboard
         }
-    }, []);
+    }, [navigate]);
 
     return (
         <div className="login-page">

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { format } from 'date-fns';
 import { handleAddRecurringTransaction } from '../Transaction/handleAddRecurringTransaction'; // Ensure this function is implemented
 import { fetchCustomKinds } from '../Transaction/fetchCustomKinds';
-import {Link, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import '../style/RecurringTransactionPage.css';
